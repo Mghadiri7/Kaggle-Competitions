@@ -25,7 +25,6 @@ This project focuses on building a neural network from scratch using **PyTorch**
 ### 2. Data Preprocessing
 * **Missing Values Imputation:**
     * `Age`: Filled with the **mean** of the training set.
-    * `Fare`: Filled with the **mean** of the training set.
     * `Embarked`: Filled with the **mode** (most frequent value).
     * *Note:* Strictly calculated statistics on the **Train set only** to prevent data leakage.
 * **Encoding:**
@@ -35,7 +34,7 @@ This project focuses on building a neural network from scratch using **PyTorch**
 
 ### 3. Model Architecture (PyTorch)
 Implemented a **Multi-Layer Perceptron (MLP)** using `nn.Sequential`:
-* **Input Layer:** Matching the number of features (approx. 10).
+* **Input Layer:** Matching the number of features.
 * **Hidden Layers:** Two dense layers (64 and 32 neurons) with **ReLU** activation.
 * **Regularization:** Applied **Dropout (0.3)** after each hidden layer to prevent overfitting.
 * **Output Layer:** 1 neuron (Logits).
@@ -56,12 +55,17 @@ Implemented a **Multi-Layer Perceptron (MLP)** using `nn.Sequential`:
 ---
 
 ## 🚀 How to Run
-1.  Download `train.csv` and `test.csv` from Kaggle.
-2.  Install dependencies:
-    ```bash
-    pip install torch pandas numpy scikit-learn matplotlib seaborn
-    ```
-3.  Run the Jupyter Notebook (designed for Google Colab).
-4.  The script will generate a `submission.csv` file for Kaggle.
+
+### ⚙️ Setup Instructions (Google Colab & Drive)
+This notebook is designed to run on **Google Colab** and load data directly from your **Google Drive**.
+
+1.  **Download:** Download the dataset `.zip` file from the [competition link](https://www.kaggle.com/c/titanic).
+2.  **Upload:** Upload the **zipped file** (do not unzip it) to your Google Drive (e.g., create a folder named `Datasets`).
+3.  **Open Notebook:** Open the `.ipynb` file in Google Colab.
+4.  **Mount Drive:** Run the first cell to mount your Google Drive.
+5.  **Update Path:** Locate the `source_path` variable in the notebook and change it to match the location where you uploaded the zip file in your Drive.
+    * Example: `source_path = '/content/drive/MyDrive/Datasets/titanic.zip'`
+
+> **Note:** The notebook handles the copying, unzipping, and loading process automatically using `shutil` and `zipfile` for better performance.
 
 **Author:** [Mohammad Ghadiri](https://github.com/Mghadiri7)
