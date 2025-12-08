@@ -22,7 +22,7 @@ My goal is to practice end-to-end Machine Learning pipelines, including:
 |:-------------|:------------:|:-----------------------|
 | **[Titanic - Machine Learning from Disaster](./01-Titanic-Survival)** | Binary Classification | `MLP (Dense Layers)`, `Dropout`, `Data Cleaning` |
 | **[Binary Prediction of Poisonous Mushrooms](./02-Mushroom-Classification)** | Binary Classification | `Deep Neural Network`, `Handling Nulls`, `Standard Scaling` |
-| **[Housing Prices Prediction](./03-Housing-Prices)** | Regression | `Feature Selection`, `Regularization`, `Cross-Validation` |
+| **[Digit Recognizer - MNIST](./03-Digit-Recognizer)** | Multi-Class Image Classification | `PyTorch`, `CNN (Conv2d)`, `Custom Dataset`, `Data Reshaping` |
 <!--
 | **[New Project Name](./Folder-Name)** | Multiclass / NLP | `Architecture used`, `Specific Technique` |
 -->
